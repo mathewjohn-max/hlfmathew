@@ -12,7 +12,7 @@ function showCalculator(type) {
                 <label for="downpayment">Downpayment:</label>
                 <input type="number" id="downpayment" required>
 
-                <input type="submit" value="Calculate Low-IP">
+                <input type="submit" value="Calculate IP">
             </form>
             <div class="result-container" id="result">
                 <p id="hlfOnroad"></p>
@@ -53,7 +53,7 @@ function showCalculator(type) {
                 <label for="percentageProcessingFee">Percentage Processing Fee (%):</label>
                 <input type="number" id="percentageProcessingFee" value="3" required>
 
-                <input type="submit" value="Calculate IP">
+                <input type="submit" value="Calculate Low-IP">
             </form>
             <div class="result-container" id="result"></div>
         `;
