@@ -1,76 +1,86 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
-}
-
-h1, h2 {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
     text-align: center;
+    margin: 0;
+    padding: 20px;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
+h1 {
+    color: #333;
+    font-size: 36px;
 }
 
-label {
-    margin-top: 10px;
-}
-
-input {
-    margin-top: 5px;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-button {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-.results {
-    margin-top: 20px;
-}
-
-.results p {
-    margin: 5px 0;
-}
-
-.tabs {
-    display: flex;
-    justify-content: center;
+.menu {
     margin-bottom: 20px;
 }
 
-.tabs button {
+button {
+    background-color: #4CAF50;
+    color: white;
     padding: 10px 20px;
-    margin: 0 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
+    font-size: 18px;
 }
 
-.form-container {
-    display: none;
+button:hover {
+    background-color: #45a049;
 }
+
+.calculator-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+input[type="number"],
+input[type="submit"] {
+    padding: 10px;
+    width: calc(100% - 22px);
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+.result-container {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.result-container p {
+    margin: 0;
+    font-size: 18px;
+}
+
