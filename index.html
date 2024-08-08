@@ -3,71 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Finance Calculator</title>
+    <title>Financial Calculators</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
 </head>
 <body>
-    <div class="container">
-        <h1>Finance Calculator</h1>
-        <div class="tabs">
-            <button onclick="showLowIP()">Low-IP</button>
-            <button onclick="showIP()">IP</button>
-        </div>
-        <div id="lowIPForm" class="form-container">
-            <h2>Low-IP Calculator</h2>
-            <form id="lowIPCalculatorForm">
-                <label for="lowIPOnroadPrice">On-road price:</label>
-                <input type="number" id="lowIPOnroadPrice" required>
-
-                <label for="lowIPExShowroomPrice">Ex-showroom price:</label>
-                <input type="number" id="lowIPExShowroomPrice" required>
-
-                <label for="lowIPTax">Tax amount:</label>
-                <input type="number" id="lowIPTax" required>
-
-                <label for="lowIPInsurance">Insurance amount:</label>
-                <input type="number" id="lowIPInsurance" required>
-
-                <label for="lowIPPercentageLoan">Percentage for loan amount (default 90%):</label>
-                <input type="number" id="lowIPPercentageLoan" value="90">
-
-                <label for="lowIPPercentageProcessingFee">Percentage for processing fee (default 3%):</label>
-                <input type="number" id="lowIPPercentageProcessingFee" value="3">
-
-                <button type="button" onclick="calculateLowIP()">Calculate</button>
-            </form>
-            <div id="lowIPResults" class="results">
-                <h2>Results</h2>
-                <p id="hlfOnroad"></p>
-                <p id="loanAmount"></p>
-                <p id="processingFee"></p>
-                <p id="dd"></p>
-                <p id="lowIP"></p>
-            </div>
-        </div>
-
-        <div id="ipForm" class="form-container" style="display: none;">
-            <h2>IP Calculator</h2>
-            <form id="ipCalculatorForm">
-                <label for="ipOnroadPrice">On-road price:</label>
-                <input type="number" id="ipOnroadPrice" required>
-
-                <label for="ipDownpayment">Downpayment amount:</label>
-                <input type="number" id="ipDownpayment" required>
-
-                <button type="button" onclick="calculateIP()">Calculate</button>
-            </form>
-            <div id="ipResults" class="results">
-                <h2>Results</h2>
-                <p id="ipHlfOnroad"></p>
-                <p id="ipHlfFund"></p>
-                <p id="ipLoanAmount"></p>
-                <p id="ipProcessingFee"></p>
-                <p id="ipDd"></p>
-                <p id="ipAnswer"></p>
-            </div>
-        </div>
+    <h1>Financial Calculators</h1>
+    <div class="menu">
+        <button onclick="showCalculator('lowIP')">IP</button>
+        <button onclick="showCalculator('ip')">LOW-IP</button>
+        <button onclick="showCalculator('emi')">EMI</button>
     </div>
+
+    <div id="calculator" class="calculator-container">
+        <!-- The calculator form will be loaded here dynamically -->
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
