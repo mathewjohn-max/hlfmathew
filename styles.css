@@ -1,86 +1,87 @@
+/* General styling */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f0f8ff;
-    text-align: center;
+    background-color: #f4f4f4;
     margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container for calculator */
+.calculator-container {
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 400px;
     padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Header styling */
 h1 {
+    text-align: center;
     color: #333;
-    font-size: 36px;
+    font-size: 24px;
 }
 
-.menu {
-    margin-bottom: 20px;
+/* Input field styling */
+label {
+    font-size: 14px;
+    color: #555;
+    display: block;
+    margin-bottom: 8px;
 }
 
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Button styling */
 button {
-    background-color: #4CAF50;
+    width: 100%;
+    background-color: #28a745;
     color: white;
-    padding: 10px 20px;
-    margin: 10px;
+    padding: 12px;
     border: none;
     border-radius: 5px;
+    font-size: 16px;
     cursor: pointer;
-    font-size: 18px;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #218838;
 }
 
-.calculator-container {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-label {
-    font-weight: bold;
-    display: block;
-    margin-top: 15px;
-    font-size: 16px;
-}
-
-input[type="number"],
-input[type="submit"] {
-    padding: 10px;
-    width: calc(100% - 22px);
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-}
-
-input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    cursor: pointer;
+/* Results section styling */
+.results {
     margin-top: 20px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
 }
 
-input[type="submit"]:hover {
-    background-color: #45a049;
-}
-
-#result {
-    margin-top: 20px;
-    font-size: 20px;
+.results p {
+    font-size: 16px;
     color: #333;
-    font-weight: bold;
 }
 
-.result-container {
-    text-align: left;
-    margin-top: 20px;
-}
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .calculator-container {
+        width: 100%;
+        padding: 15px;
+    }
 
-.result-container p {
-    margin: 0;
-    font-size: 18px;
+    h1 {
+        font-size: 20px;
+    }
 }
-
