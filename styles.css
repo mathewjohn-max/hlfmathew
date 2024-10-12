@@ -1,63 +1,71 @@
 /* General styling */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
 
-/* Container for calculator */
-.calculator-container {
-    background-color: #ffffff;
-    width: 90%;
-    max-width: 400px;
+/* Calculator container */
+.calculator {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Header styling */
-h1 {
+    max-width: 350px;
+    width: 90%;
     text-align: center;
-    color: #333;
-    font-size: 24px;
 }
 
-/* Input field styling */
-label {
+h1 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Input group styling */
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
     font-size: 14px;
     color: #555;
-    display: block;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
 }
 
-input[type="number"] {
+.input-group input {
     width: 100%;
     padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
     font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
 }
 
 /* Button styling */
 button {
     width: 100%;
-    background-color: #28a745;
+    background-color: #007bff;
     color: white;
     padding: 12px;
-    border: none;
-    border-radius: 5px;
     font-size: 16px;
+    border: none;
+    border-radius: 6px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #0056b3;
 }
 
 /* Results section styling */
@@ -65,7 +73,7 @@ button:hover {
     margin-top: 20px;
     background-color: #f9f9f9;
     padding: 15px;
-    border-radius: 5px;
+    border-radius: 8px;
     border: 1px solid #ddd;
 }
 
@@ -74,14 +82,9 @@ button:hover {
     color: #333;
 }
 
-/* Mobile responsiveness */
+/* Responsive styling for smaller screens */
 @media (max-width: 768px) {
-    .calculator-container {
+    .calculator {
         width: 100%;
-        padding: 15px;
-    }
-
-    h1 {
-        font-size: 20px;
     }
 }
