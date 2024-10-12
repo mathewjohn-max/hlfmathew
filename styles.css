@@ -12,79 +12,89 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    padding: 20px;
 }
 
 /* Calculator container */
 .calculator {
-    background-color: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    max-width: 350px;
-    width: 90%;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    max-width: 400px;
+    width: 100%;
     text-align: center;
 }
 
 h1 {
-    font-size: 22px;
-    color: #333;
+    font-size: 24px;
+    color: #2c3e50;
     margin-bottom: 20px;
 }
 
 /* Input group styling */
 .input-group {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     text-align: left;
 }
 
 .input-group label {
     display: block;
     font-size: 14px;
-    color: #555;
+    color: #7f8c8d;
     margin-bottom: 5px;
 }
 
 .input-group input {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
+    border: 1px solid #bdc3c7;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
 }
 
 /* Button styling */
 button {
     width: 100%;
-    background-color: #007bff;
+    background-color: #3498db;
     color: white;
-    padding: 12px;
+    padding: 14px;
     font-size: 16px;
     border: none;
-    border-radius: 6px;
+    border-radius: 8px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #2980b9;
 }
 
 /* Results section styling */
 .results {
-    margin-top: 20px;
-    background-color: #f9f9f9;
-    padding: 15px;
-    border-radius: 8px;
+    margin-top: 30px;
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
     border: 1px solid #ddd;
 }
 
 .results p {
     font-size: 16px;
-    color: #333;
+    color: #2c3e50;
+    margin-bottom: 10px;
 }
 
 /* Responsive styling for smaller screens */
 @media (max-width: 768px) {
     .calculator {
-        width: 100%;
+        padding: 20px;
     }
 }
