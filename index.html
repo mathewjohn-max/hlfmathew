@@ -9,27 +9,39 @@
 <body>
 
     <!-- Calculator container -->
-    <div class="calculator-container">
+    <div class="calculator">
         <h1>Low-IP Calculator</h1>
 
         <!-- Input fields for vehicle costs and percentages -->
-        <label for="exShowroomPrice">Ex showroom price:</label>
-        <input type="number" id="exShowroomPrice" placeholder="Enter ex showroom price">
+        <div class="input-group">
+            <label for="exShowroomPrice">Ex showroom price</label>
+            <input type="number" id="exShowroomPrice" placeholder="Enter ex showroom price">
+        </div>
 
-        <label for="roadTax">Road Tax:</label>
-        <input type="number" id="roadTax" placeholder="Enter road tax">
+        <div class="input-group">
+            <label for="roadTax">Road Tax</label>
+            <input type="number" id="roadTax" placeholder="Enter road tax">
+        </div>
 
-        <label for="insurance">Insurance amount:</label>
-        <input type="number" id="insurance" placeholder="Enter insurance amount">
+        <div class="input-group">
+            <label for="insurance">Insurance</label>
+            <input type="number" id="insurance" placeholder="Enter insurance amount">
+        </div>
 
-        <label for="loanPercentage">Loan amount percentage (%):</label>
-        <input type="number" id="loanPercentage" placeholder="Enter loan percentage">
+        <div class="input-group">
+            <label for="loanPercentage">Loan amount percentage (%)</label>
+            <input type="number" id="loanPercentage" placeholder="Enter loan percentage">
+        </div>
 
-        <label for="processingFeePercentage">Processing fee percentage (%):</label>
-        <input type="number" id="processingFeePercentage" placeholder="Enter processing fee percentage">
+        <div class="input-group">
+            <label for="processingFeePercentage">Processing fee percentage (%)</label>
+            <input type="number" id="processingFeePercentage" placeholder="Enter processing fee percentage">
+        </div>
 
-        <label for="showroomOnroad">SHOWROOM ONROAD amount:</label>
-        <input type="number" id="showroomOnroad" placeholder="Enter showroom onroad amount">
+        <div class="input-group">
+            <label for="showroomOnroad">SHOWROOM ONROAD</label>
+            <input type="number" id="showroomOnroad" placeholder="Enter showroom onroad">
+        </div>
 
         <!-- Button to trigger calculation -->
         <button onclick="calculateLowIP()">Calculate Low-IP</button>
