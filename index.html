@@ -3,19 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Financial Calculators</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Low-IP Calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Financial Calculators</h1>
-    <div class="menu">
-        <button onclick="showCalculator('lowIP')">IP</button>
-        <button onclick="showCalculator('ip')">LOW-IP</button>
-        <button onclick="showCalculator('emi')">EMI</button>
-    </div>
 
-    <div id="calculator" class="calculator-container">
-        <!-- The calculator form will be loaded here dynamically -->
+    <!-- Calculator container -->
+    <div class="calculator-container">
+        <h1>Low-IP Calculator</h1>
+
+        <!-- Input fields for vehicle costs and percentages -->
+        <label for="exShowroomPrice">Ex showroom price:</label>
+        <input type="number" id="exShowroomPrice" placeholder="Enter ex showroom price">
+
+        <label for="roadTax">Road Tax:</label>
+        <input type="number" id="roadTax" placeholder="Enter road tax">
+
+        <label for="insurance">Insurance amount:</label>
+        <input type="number" id="insurance" placeholder="Enter insurance amount">
+
+        <label for="loanPercentage">Loan amount percentage (%):</label>
+        <input type="number" id="loanPercentage" placeholder="Enter loan percentage">
+
+        <label for="processingFeePercentage">Processing fee percentage (%):</label>
+        <input type="number" id="processingFeePercentage" placeholder="Enter processing fee percentage">
+
+        <label for="showroomOnroad">SHOWROOM ONROAD amount:</label>
+        <input type="number" id="showroomOnroad" placeholder="Enter showroom onroad amount">
+
+        <!-- Button to trigger calculation -->
+        <button onclick="calculateLowIP()">Calculate Low-IP</button>
+
+        <!-- Results display section -->
+        <div class="results" id="resultsSection" style="display: none;">
+            <h2>Results</h2>
+            <p id="hlfOnroad"></p>
+            <p id="loanAmount"></p>
+            <p id="processingFee"></p>
+            <p id="dd"></p>
+            <p id="lowIp"></p>
+        </div>
     </div>
 
     <script src="script.js"></script>
